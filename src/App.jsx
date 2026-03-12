@@ -1,6 +1,5 @@
 import './App.css'
-import BlogImage from './components/BlogImage'
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Home from './pages/Home';
 import Pinboard from './pages/Pinboard';
 import Written from './pages/Written';
