@@ -1,0 +1,14 @@
+<!-- public/404.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        // Store the path that was requested
+        sessionStorage.redirect = location.pathname + location.search + location.hash;
+    </script>
+    <!-- Redirect to home page -->
+    <meta http-equiv="refresh" content="0;url=/">
+</html>

@@ -14,7 +14,6 @@ const MDfiles = await Promise.all(
   }))
 );
 
-console.log(MDfiles)
 
 const Written = () => {
   const numMD = Object.keys(modules).length

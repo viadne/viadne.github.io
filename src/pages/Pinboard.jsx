@@ -3,9 +3,6 @@ import BlogImage from "../components/BlogImage"
 import PoissonDiskSampling from "poisson-disk-sampling";
 import Sidebar from "../components/SideBar";
 
-
-
-
 const images = import.meta.glob("../assets/blogImages/*", { eager: true });
 const imageList = Object.values(images).map((img) => img.default).reverse();
 
@@ -26,6 +23,7 @@ const Pinboard = () => {
   const randomSign = () => {
     return Math.random()>.5? -1:1
   }
+  
 
   const appendImage = () => {
     if (imageCount >= numImages) {
