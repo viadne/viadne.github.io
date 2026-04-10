@@ -26,10 +26,10 @@
     
 
     return <div className="absolute inset-0" onClick={addBit}>
-      <Sidebar/>
+      {/* <Sidebar/> */}
       <div className=' flex flex-col justify-center h-screen items-center' >
-        <p>Hi</p>
         
+      <p className="my-auto italic">Hi!</p>
         <div>
           {bitsElements.slice(0, numBits)}
         </div>

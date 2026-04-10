@@ -1,9 +1,9 @@
 import os
 import json
 
-blogimagesPath = "src/assets/blogImages"
+blogimagesPath = "public/assets/img"
 imgs = os.scandir(blogimagesPath)
-writtensPath = "src/assets/writtens"
+writtensPath = "public/assets/writtens"
 bits = json.load(open("bits.json", "r"))
 
 addedImages = set([bit["img"] for bit in bits])
