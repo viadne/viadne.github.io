@@ -29,7 +29,7 @@
       {/* <Sidebar/> */}
       <div className=' flex flex-col justify-center h-screen items-center' >
         
-      <p className="my-auto italic">Hi!</p>
+      <p className="my-auto italic">Happy Birthday Brian!</p>
         <div>
           {bitsElements.slice(0, numBits)}
         </div>
