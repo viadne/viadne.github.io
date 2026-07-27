@@ -1,9 +1,9 @@
   import BlogImage from "../components/BlogImage"
   import Sidebar from "../components/SideBar"
-  import bits from "../../data/bits.json"
+  import bits from "../../data/hbd_bribri_bits.json"
   import { useState } from "react"
 
-  const Home = () => {
+  const HbdBriBri = () => {
     const [numBits, setNumBits] = useState(0)
 
     const randomSign = () => Math.random() > .5? -1 : 1
@@ -38,4 +38,4 @@
     </div>
   }
 
-  export default Home
+  export default HbdBriBri
