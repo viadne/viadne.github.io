@@ -12,10 +12,10 @@ function App() {
     <>  
       <Routes>
         <Route path= "/" element ={ <Home/>}/>
-        <Route path= "/board" element ={ <Pinboard/>}/>
-        <Route path= "/write" element ={ <Writtens/>}/>
+        {/* <Route path= "/board" element ={ <Pinboard/>}/>
+        <Route path= "/write" element ={ <Writtens/>}/> */}
         <Route path= "/writes/:writtenFile" element ={ <Written/>}/>
-        <Route path= "/hbdbribri" element ={ <HbdBriBri/>}/>
+        {/* <Route path= "/hbdbribri" element ={ <HbdBriBri/>}/> */}
       </Routes>
     </>
   )
