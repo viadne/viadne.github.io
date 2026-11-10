@@ -1,20 +1,25 @@
 import os
 import json
 
-blogimagesPath = "public/assets/img"
+# run this from root
+
+blogimagesPath = "public\\assets\\img"
 imgs = os.scandir(blogimagesPath)
 writtensPath = "public/assets/writtens"
-bits = json.load(open("bits.json", "r"))
+bits = json.load(open("data\\bits.json", "r"))
 
 addedImages = set([bit["img"] for bit in bits])
-unaddedImgs = [img.path for img in imgs if img.path not in addedImages]
+allNewImgs = [img.path.removeprefix("public\\") for img in imgs]
+unaddedImgs = [ img for img in allNewImgs if img not in addedImages]
 
-unaddedImgs.sort(reverse = True)
+print(unaddedImgs)
+unaddedImgs.sort(reverse = False)
 
 for file in unaddedImgs:
-    bits.append({"img": file})
+    # bits.append({"img": file})
+    bits.insert(2, {"img": file})
 
 
 
 
-json.dump(bits, open("bits.json", "w"), indent=4)
+json.dump(bits, open("data\\bits.json", "w"), indent=4)

@@ -22,7 +22,6 @@
     }, [writtenFile])
 
     return <div>
-      <img src="/assets/img/260410_c.svg"></img>
       <a href="/" className="underline absolute left-10 top-10">Back</a>
       <div className="w-120 text-left">
         <ReactMarkdown >{content}</ReactMarkdown>
