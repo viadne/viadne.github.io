@@ -13,11 +13,10 @@
       setBitsInfo(bits.map((bit, idx) => {
       bit["positioning"] = {
             width: Math.random() * (80) + 200,
-            left: randomSign() * Math.random() * (window.innerWidth/4) + (window.innerWidth/2),  // 5 +- .25
-            top:  randomSign() * Math.random() * (window.innerHeight/4) + (window.innerHeight/2),  // .5 +- .25
+            left: randomSign() * Math.random() ,
+            top:  randomSign() * Math.random(),
         };
         bit["isVisible"] = (idx < numBits) ;
-        console.log(bit)
         return bit})
     )
     }, []); 

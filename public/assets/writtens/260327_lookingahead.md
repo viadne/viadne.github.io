@@ -1,2 +1,0 @@
-eden quote
-

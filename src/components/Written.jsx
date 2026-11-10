@@ -7,8 +7,6 @@
     const {writtenFile} = useParams()
     const [content, setContent] = useState("");
 
-    // console.log(content)
-
     useEffect( () => {
       
       const fetchMarkdown = async () => {
