@@ -1,7 +1,7 @@
 
 
 
-![](/assets/writtens/writtenimgs/260410_c.svg)
+![](../assets/writtens/writtenimgs/260410_c.svg)
 
  &nbsp;
 

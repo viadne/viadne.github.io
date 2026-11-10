@@ -10,7 +10,7 @@
     useEffect( () => {
       
       const fetchMarkdown = async () => {
-        const res = await fetch(`/assets/writtens/${writtenFile}`);
+        const res = await fetch(`../assets/writtens/${writtenFile}`);
         const str = await res.text();
         setContent(str);
 
